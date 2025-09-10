@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>DiscoveryUtils</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../index.html">
+                    Ticketmaster Prepurchase
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;-ticketmaster -prepurchase/com.ticketmaster.prepurchase.util/-discovery-utils/index.html&quot;}">3.7.2</dokka-template-command>        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":pre-purchase/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":pre-purchase/release"
+                                       data-filter=":pre-purchase/release"/>
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Ticketmaster Prepurchase
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="Ticketmaster Prepurchase::com.ticketmaster.prepurchase.util/DiscoveryUtils///PointingToDeclaration//-1044060554">
+  <div class="breadcrumbs"><a href="../../../index.html">Ticketmaster Prepurchase</a><span class="delimiter">/</span><a href="../index.html">com.ticketmaster.prepurchase.util</a><span class="delimiter">/</span><span class="current">DiscoveryUtils</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Discovery</span><wbr></wbr><span><span>Utils</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">DiscoveryUtils</a></div><p class="paragraph">Utility for handling URL and data operations in the prepurchase discovery flow.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1021460390%2FProperties%2F-1044060554" anchor-label="defaultDiscoveryHomeUrl" id="-1021460390%2FProperties%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="default-discovery-home-url.html"><span>default</span><wbr></wbr><span>Discovery</span><wbr></wbr><span>Home</span><wbr></wbr><span><span>Url</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1021460390%2FProperties%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="default-discovery-home-url.html">defaultDiscoveryHomeUrl</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">The default URL for the discovery home page.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2041353829%2FProperties%2F-1044060554" anchor-label="domain" id="-2041353829%2FProperties%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="domain.html"><span><span>domain</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2041353829%2FProperties%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="domain.html">domain</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">The current domain for the discovery flow.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1869867979%2FProperties%2F-1044060554" anchor-label="homeUrl" id="1869867979%2FProperties%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="home-url.html"><span>home</span><wbr></wbr><span><span>Url</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1869867979%2FProperties%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="home-url.html">homeUrl</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">The URL for the discovery home page.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1798042035%2FProperties%2F-1044060554" anchor-label="isSwitchingCountry" id="-1798042035%2FProperties%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-switching-country.html"><span>is</span><wbr></wbr><span>Switching</span><wbr></wbr><span><span>Country</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1798042035%2FProperties%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="is-switching-country.html">isSwitchingCountry</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Indicates whether a country switch is in progress.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="601728487%2FProperties%2F-1044060554" anchor-label="supportedUriMatcher" id="601728487%2FProperties%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="supported-uri-matcher.html"><span>supported</span><wbr></wbr><span>Uri</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="601728487%2FProperties%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="supported-uri-matcher.html">supportedUriMatcher</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/UriMatcher.html">UriMatcher</a></div><div class="brief "><p class="paragraph">UriMatcher for identifying supported URIs.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-271356059%2FProperties%2F-1044060554" anchor-label="TM_EXTRA_URL" id="-271356059%2FProperties%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-t-m_-e-x-t-r-a_-u-r-l.html"><span>TM_</span><wbr></wbr><span>EXTRA_</span><wbr></wbr><span>URL</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-271356059%2FProperties%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="-t-m_-e-x-t-r-a_-u-r-l.html">TM_EXTRA_URL</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Key for passing a URL as an extra in an Intent.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-422685730%2FFunctions%2F-1044060554" anchor-label="createSupportedUrlMatcher" id="-422685730%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-supported-url-matcher.html"><span>create</span><wbr></wbr><span>Supported</span><wbr></wbr><span>Url</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-422685730%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="create-supported-url-matcher.html"><span class="token function">createSupportedUrlMatcher</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">supportedUrls<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../com.ticketmaster.prepurchase.data/-supported-url/index.html">SupportedUrl</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Populates the supported URL matcher with a list of supported URLs.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1756738064%2FFunctions%2F-1044060554" anchor-label="doesSupportPath" id="1756738064%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="does-support-path.html"><span>does</span><wbr></wbr><span>Support</span><wbr></wbr><span><span>Path</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1756738064%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="does-support-path.html"><span class="token function">doesSupportPath</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">destinationUrl<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/net/URL.html">URL</a><span class="token punctuation">, </span></span><span class="parameter ">supportedRegexPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/VisibleForTesting.html"><span class="token annotation builtin">VisibleForTesting</span></a></div></div><span class="token keyword">fun </span><a href="does-support-path.html"><span class="token function">doesSupportPath</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">urlPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">supportedRegexPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks if a URL path matches a supported regex pattern.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2111868946%2FFunctions%2F-1044060554" anchor-label="doesUrlContainHandledPath" id="-2111868946%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="does-url-contain-handled-path.html"><span>does</span><wbr></wbr><span>Url</span><wbr></wbr><span>Contain</span><wbr></wbr><span>Handled</span><wbr></wbr><span><span>Path</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2111868946%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="does-url-contain-handled-path.html"><span class="token function">doesUrlContainHandledPath</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">uri<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/net/Uri.html">Uri</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks if a URI contains a supported path.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="71000093%2FFunctions%2F-1044060554" anchor-label="encode" id="71000093%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="encode.html"><span><span>encode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="71000093%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="encode.html"><span class="token function">encode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">latitude<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">longitude<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">precision<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Encodes latitude and longitude into a geohash string.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1413640666%2FFunctions%2F-1044060554" anchor-label="getArrayMapFromJsString" id="-1413640666%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-array-map-from-js-string.html"><span>get</span><wbr></wbr><span>Array</span><wbr></wbr><span>Map</span><wbr></wbr><span>From</span><wbr></wbr><span>Js</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1413640666%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-array-map-from-js-string.html"><span class="token function">getArrayMapFromJsString</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">json<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/collection/ArrayMap.html">ArrayMap</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Parses a JSON string into an ArrayMap.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="891626596%2FFunctions%2F-1044060554" anchor-label="getEventId" id="891626596%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-event-id.html"><span>get</span><wbr></wbr><span>Event</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="891626596%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-event-id.html"><span class="token function">getEventId</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">url<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Extracts the event ID from a URL.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-342657243%2FFunctions%2F-1044060554" anchor-label="getFavoriteJsString" id="-342657243%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-favorite-js-string.html"><span>get</span><wbr></wbr><span>Favorite</span><wbr></wbr><span>Js</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-342657243%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-favorite-js-string.html"><span class="token function">getFavoriteJsString</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">favoriteState<span class="token operator">: </span><a href="../../com.ticketmaster.prepurchase.data/-favorite-state/index.html">FavoriteState</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Creates a JavaScript method string for a favorite action.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="405392393%2FFunctions%2F-1044060554" anchor-label="getLocationDeniedJsString" id="405392393%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-location-denied-js-string.html"><span>get</span><wbr></wbr><span>Location</span><wbr></wbr><span>Denied</span><wbr></wbr><span>Js</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="405392393%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-location-denied-js-string.html"><span class="token function">getLocationDeniedJsString</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">errorString<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Creates a JavaScript method string for a denied location permission.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1115637197%2FFunctions%2F-1044060554" anchor-label="getLocationJsString" id="-1115637197%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-location-js-string.html"><span>get</span><wbr></wbr><span>Location</span><wbr></wbr><span>Js</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1115637197%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-location-js-string.html"><span class="token function">getLocationJsString</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">latitude<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">longitude<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Creates a JavaScript method string for updating location.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1184118577%2FFunctions%2F-1044060554" anchor-label="getLocationValuesString" id="1184118577%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-location-values-string.html"><span>get</span><wbr></wbr><span>Location</span><wbr></wbr><span>Values</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1184118577%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-location-values-string.html"><span class="token function">getLocationValuesString</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">coordinates<span class="token operator">: </span><a href="../../com.ticketmaster.prepurchase.data/-coordinates/index.html">Coordinates</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Checks if a URI contains a supported path.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1380220370%2FFunctions%2F-1044060554" anchor-label="getMemberJsFunctionString" id="-1380220370%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-member-js-function-string.html"><span>get</span><wbr></wbr><span>Member</span><wbr></wbr><span>Js</span><wbr></wbr><span>Function</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1380220370%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-member-js-function-string.html"><span class="token function">getMemberJsFunctionString</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">email<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">firstName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">lastName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">memberId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">hmacId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">accessToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">deviceId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">countryCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Creates a JavaScript method string for updating user sign-in status.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-677515788%2FFunctions%2F-1044060554" anchor-label="getMemberMap" id="-677515788%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-member-map.html"><span>get</span><wbr></wbr><span>Member</span><wbr></wbr><span><span>Map</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-677515788%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-member-map.html"><span class="token function">getMemberMap</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">email<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">firstName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">lastName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">memberId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">hmacId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">accessToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">deviceId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">countryCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Creates a map of user member information.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="621401871%2FFunctions%2F-1044060554" anchor-label="getMemberValuesString" id="621401871%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-member-values-string.html"><span>get</span><wbr></wbr><span>Member</span><wbr></wbr><span>Values</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="621401871%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-member-values-string.html"><span class="token function">getMemberValuesString</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">memberInfo<span class="token operator">: </span><span data-unresolved-link="com.ticketmaster.discoveryapi.models/MemberInfo///PointingToDeclaration/">MemberInfo</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Creates a string of member information from <span data-unresolved-link="com.ticketmaster.discoveryapi.models/MemberInfo///PointingToDeclaration/">MemberInfo</span>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-605905931%2FFunctions%2F-1044060554" anchor-label="isHomePath" id="-605905931%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-home-path.html"><span>is</span><wbr></wbr><span>Home</span><wbr></wbr><span><span>Path</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-605905931%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="is-home-path.html"><span class="token function">isHomePath</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">uri<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/net/Uri.html">Uri</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks if a URI is the discovery home path.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1018441357%2FFunctions%2F-1044060554" anchor-label="isLoadingEvent" id="1018441357%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-loading-event.html"><span>is</span><wbr></wbr><span>Loading</span><wbr></wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1018441357%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="is-loading-event.html"><span class="token function">isLoadingEvent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">url<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks if a URL represents an event page.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="560731514%2FFunctions%2F-1044060554" anchor-label="isLoadingHome" id="560731514%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-loading-home.html"><span>is</span><wbr></wbr><span>Loading</span><wbr></wbr><span><span>Home</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="560731514%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="is-loading-home.html"><span class="token function">isLoadingHome</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">url<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks if a URL is the discovery home page.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1006794943%2FFunctions%2F-1044060554" anchor-label="isLoadingNonHome" id="1006794943%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-loading-non-home.html"><span>is</span><wbr></wbr><span>Loading</span><wbr></wbr><span>Non</span><wbr></wbr><span><span>Home</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1006794943%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="is-loading-non-home.html"><span class="token function">isLoadingNonHome</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">url<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks if a URL is not the discovery home page.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Ticketmaster. All rights reserved.</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ICCPTransaction</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../index.html">
+                    Ticketmaster Purchase
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;-ticketmaster -purchase/com.ticketmaster.purchase.entity/-i-c-c-p-transaction/index.html&quot;}">3.7.2</dokka-template-command>        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":retail/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":retail/release"
+                                       data-filter=":retail/release"/>
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Ticketmaster Purchase
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="Ticketmaster Purchase::com.ticketmaster.purchase.entity/ICCPTransaction///PointingToDeclaration//-635645106">
+  <div class="breadcrumbs"><a href="../../../index.html">Ticketmaster Purchase</a><span class="delimiter">/</span><a href="../index.html">com.ticketmaster.purchase.entity</a><span class="delimiter">/</span><span class="current">ICCPTransaction</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>ICCPTransaction</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">ICCPTransaction</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>artistID<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>artistName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>basePriceTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>billingCountry<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>billingPostalCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>billingStateProvince<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>currencyCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>edpType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>eventID<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>eventName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>eventOnSaleDateTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>grandTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isResale<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>majorCategoryID<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>majorCategoryName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>minorCategoryID<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>minorCategoryName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>orderDateTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>orderID<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>orderProcessingFee<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>paymentMethod<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>promoterID<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>shippingMethod<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>iccpItemList<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-i-c-c-p-item/index.html">ICCPItem</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">Represents a transaction in the purchase flow.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>artist</span><wbr></wbr><span><span>ID</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The ID of the artist or attraction.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>artist</span><wbr></wbr><span><span>Name</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The name of the artist or attraction.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>base</span><wbr></wbr><span>Price</span><wbr></wbr><span><span>Total</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The total base price of the transaction.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>billing</span><wbr></wbr><span><span>Country</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The country for billing.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>billing</span><wbr></wbr><span>Postal</span><wbr></wbr><span><span>Code</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The postal code for billing.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>billing</span><wbr></wbr><span>State</span><wbr></wbr><span><span>Province</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The state or province for billing.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>currency</span><wbr></wbr><span><span>Code</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The currency code for the transaction.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>edp</span><wbr></wbr><span><span>Type</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The type of Event Details Page.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>event</span><wbr></wbr><span><span>ID</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The ID of the event.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>event</span><wbr></wbr><span><span>Name</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The name of the event.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>event</span><wbr></wbr><span>On</span><wbr></wbr><span>Sale</span><wbr></wbr><span>Date</span><wbr></wbr><span><span>Time</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The event's on-sale date and time.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>grand</span><wbr></wbr><span><span>Total</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The total cost including fees and taxes.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>is</span><wbr></wbr><span><span>Resale</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Whether the transaction is for resale tickets.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>major</span><wbr></wbr><span>Category</span><wbr></wbr><span><span>ID</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The ID of the major category.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>major</span><wbr></wbr><span>Category</span><wbr></wbr><span><span>Name</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The name of the major category.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>minor</span><wbr></wbr><span>Category</span><wbr></wbr><span><span>ID</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The ID of the minor category.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>minor</span><wbr></wbr><span>Category</span><wbr></wbr><span><span>Name</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The name of the minor category.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>order</span><wbr></wbr><span>Date</span><wbr></wbr><span><span>Time</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The date and time of the order.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>order</span><wbr></wbr><span><span>ID</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The ID of the order.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>order</span><wbr></wbr><span>Processing</span><wbr></wbr><span><span>Fee</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The processing fee for the order.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>payment</span><wbr></wbr><span><span>Method</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The payment method used.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>promoter</span><wbr></wbr><span><span>ID</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The ID of the promoter.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>shipping</span><wbr></wbr><span><span>Method</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The shipping method used.</p></div></div></div></div><div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>iccp</span><wbr></wbr><span>Item</span><wbr></wbr><span><span>List</span></span></u></div></span></div><div><div class="title"><p class="paragraph">List of <a href="../-i-c-c-p-item/index.html">ICCPItem</a> in the transaction.</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1891989845%2FConstructors%2F-635645106" anchor-label="ICCPTransaction" id="-1891989845%2FConstructors%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-c-c-p-transaction.html"><span><span>ICCPTransaction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1891989845%2FConstructors%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">artistID<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">artistName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">basePriceTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">billingCountry<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">billingPostalCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">billingStateProvince<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">currencyCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">edpType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">eventID<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">eventName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">eventOnSaleDateTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">grandTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">isResale<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">majorCategoryID<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">majorCategoryName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">minorCategoryID<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">minorCategoryName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">orderDateTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">orderID<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">orderProcessingFee<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">paymentMethod<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">promoterID<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">shippingMethod<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">iccpItemList<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-i-c-c-p-item/index.html">ICCPItem</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1659540561%2FProperties%2F-635645106" anchor-label="artistID" id="1659540561%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="artist-i-d.html"><span>artist</span><wbr></wbr><span><span>ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1659540561%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="artist-i-d.html">artistID</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1569720063%2FProperties%2F-635645106" anchor-label="artistName" id="-1569720063%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="artist-name.html"><span>artist</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1569720063%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="artist-name.html">artistName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1461671047%2FProperties%2F-635645106" anchor-label="basePriceTotal" id="1461671047%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="base-price-total.html"><span>base</span><wbr></wbr><span>Price</span><wbr></wbr><span><span>Total</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1461671047%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="base-price-total.html">basePriceTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1086221320%2FProperties%2F-635645106" anchor-label="billingCountry" id="-1086221320%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="billing-country.html"><span>billing</span><wbr></wbr><span><span>Country</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1086221320%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="billing-country.html">billingCountry</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1135362892%2FProperties%2F-635645106" anchor-label="billingPostalCode" id="-1135362892%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="billing-postal-code.html"><span>billing</span><wbr></wbr><span>Postal</span><wbr></wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1135362892%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="billing-postal-code.html">billingPostalCode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-854580659%2FProperties%2F-635645106" anchor-label="billingStateProvince" id="-854580659%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="billing-state-province.html"><span>billing</span><wbr></wbr><span>State</span><wbr></wbr><span><span>Province</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-854580659%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="billing-state-province.html">billingStateProvince</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="771444181%2FProperties%2F-635645106" anchor-label="currencyCode" id="771444181%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="currency-code.html"><span>currency</span><wbr></wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="771444181%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="currency-code.html">currencyCode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1250788388%2FProperties%2F-635645106" anchor-label="edpType" id="-1250788388%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="edp-type.html"><span>edp</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1250788388%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="edp-type.html">edpType</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1408238478%2FProperties%2F-635645106" anchor-label="eventID" id="-1408238478%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="event-i-d.html"><span>event</span><wbr></wbr><span><span>ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1408238478%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="event-i-d.html">eventID</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="937155810%2FProperties%2F-635645106" anchor-label="eventName" id="937155810%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="event-name.html"><span>event</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="937155810%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="event-name.html">eventName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1707095124%2FProperties%2F-635645106" anchor-label="eventOnSaleDateTime" id="-1707095124%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="event-on-sale-date-time.html"><span>event</span><wbr></wbr><span>On</span><wbr></wbr><span>Sale</span><wbr></wbr><span>Date</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1707095124%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="com.google.gson.annotations/SerializedName///PointingToDeclaration/"><span class="token annotation builtin">SerializedName</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;eventOnsaleDateTime&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword">val </span><a href="event-on-sale-date-time.html">eventOnSaleDateTime</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1641148261%2FProperties%2F-635645106" anchor-label="grandTotal" id="-1641148261%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="grand-total.html"><span>grand</span><wbr></wbr><span><span>Total</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1641148261%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="grand-total.html">grandTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-869486021%2FProperties%2F-635645106" anchor-label="iccpItemList" id="-869486021%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="iccp-item-list.html"><span>iccp</span><wbr></wbr><span>Item</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-869486021%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="com.google.gson.annotations/SerializedName///PointingToDeclaration/"><span class="token annotation builtin">SerializedName</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;items&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword">val </span><a href="iccp-item-list.html">iccpItemList</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-i-c-c-p-item/index.html">ICCPItem</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1137762927%2FProperties%2F-635645106" anchor-label="isResale" id="1137762927%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-resale.html"><span>is</span><wbr></wbr><span><span>Resale</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1137762927%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="is-resale.html">isResale</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1555408619%2FProperties%2F-635645106" anchor-label="majorCategoryID" id="-1555408619%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="major-category-i-d.html"><span>major</span><wbr></wbr><span>Category</span><wbr></wbr><span><span>ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1555408619%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="major-category-i-d.html">majorCategoryID</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1240571077%2FProperties%2F-635645106" anchor-label="majorCategoryName" id="1240571077%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="major-category-name.html"><span>major</span><wbr></wbr><span>Category</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1240571077%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="major-category-name.html">majorCategoryName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1889306009%2FProperties%2F-635645106" anchor-label="minorCategoryID" id="1889306009%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="minor-category-i-d.html"><span>minor</span><wbr></wbr><span>Category</span><wbr></wbr><span><span>ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1889306009%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="minor-category-i-d.html">minorCategoryID</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="191543369%2FProperties%2F-635645106" anchor-label="minorCategoryName" id="191543369%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="minor-category-name.html"><span>minor</span><wbr></wbr><span>Category</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="191543369%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="minor-category-name.html">minorCategoryName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-876403810%2FProperties%2F-635645106" anchor-label="orderDateTime" id="-876403810%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="order-date-time.html"><span>order</span><wbr></wbr><span>Date</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-876403810%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="order-date-time.html">orderDateTime</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1412536126%2FProperties%2F-635645106" anchor-label="orderID" id="1412536126%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="order-i-d.html"><span>order</span><wbr></wbr><span><span>ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1412536126%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="order-i-d.html">orderID</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="231918094%2FProperties%2F-635645106" anchor-label="orderProcessingFee" id="231918094%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="order-processing-fee.html"><span>order</span><wbr></wbr><span>Processing</span><wbr></wbr><span><span>Fee</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="231918094%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="order-processing-fee.html">orderProcessingFee</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1077884960%2FProperties%2F-635645106" anchor-label="paymentMethod" id="-1077884960%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="payment-method.html"><span>payment</span><wbr></wbr><span><span>Method</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1077884960%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="payment-method.html">paymentMethod</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1756322438%2FProperties%2F-635645106" anchor-label="promoterID" id="1756322438%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="promoter-i-d.html"><span>promoter</span><wbr></wbr><span><span>ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1756322438%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="promoter-i-d.html">promoterID</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1936130332%2FProperties%2F-635645106" anchor-label="shippingMethod" id="-1936130332%2FProperties%2F-635645106" data-filterable-set=":retail/release"></a>
+          <div class="table-row" data-filterable-current=":retail/release" data-filterable-set=":retail/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="shipping-method.html"><span>shipping</span><wbr></wbr><span><span>Method</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1936130332%2FProperties%2F-635645106"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":retail/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="shipping-method.html">shippingMethod</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Ticketmaster. All rights reserved.</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
