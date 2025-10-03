@@ -69,6 +69,12 @@ $dokka.location:com.ticketmaster.prepurchase.base/ExternalWebParams/ExternalWebP
 $dokka.location:com.ticketmaster.prepurchase.base/ExternalWebParams/brandColor/#/PointingToDeclaration/-ticketmaster -prepurchase/com.ticketmaster.prepurchase.base/-external-web-params/brand-color.html
 $dokka.location:com.ticketmaster.prepurchase.base/ExternalWebParams/brandName/#/PointingToDeclaration/-ticketmaster -prepurchase/com.ticketmaster.prepurchase.base/-external-web-params/brand-name.html
 $dokka.location:com.ticketmaster.prepurchase.base/ExternalWebParams/externalURL/#/PointingToDeclaration/-ticketmaster -prepurchase/com.ticketmaster.prepurchase.base/-external-web-params/external-u-r-l.html
+$dokka.location:com.ticketmaster.prepurchase.base/WebViewMarginMode.Custom///PointingToDeclaration/-ticketmaster -prepurchase/com.ticketmaster.prepurchase.base/-web-view-margin-mode/-custom/index.html
+$dokka.location:com.ticketmaster.prepurchase.base/WebViewMarginMode.Custom/Custom/#kotlin.Int/PointingToDeclaration/-ticketmaster -prepurchase/com.ticketmaster.prepurchase.base/-web-view-margin-mode/-custom/-custom.html
+$dokka.location:com.ticketmaster.prepurchase.base/WebViewMarginMode.Custom/topMargin/#/PointingToDeclaration/-ticketmaster -prepurchase/com.ticketmaster.prepurchase.base/-web-view-margin-mode/-custom/top-margin.html
+$dokka.location:com.ticketmaster.prepurchase.base/WebViewMarginMode.Default///PointingToDeclaration/-ticketmaster -prepurchase/com.ticketmaster.prepurchase.base/-web-view-margin-mode/-default/index.html
+$dokka.location:com.ticketmaster.prepurchase.base/WebViewMarginMode.None///PointingToDeclaration/-ticketmaster -prepurchase/com.ticketmaster.prepurchase.base/-web-view-margin-mode/-none/index.html
+$dokka.location:com.ticketmaster.prepurchase.base/WebViewMarginMode///PointingToDeclaration/-ticketmaster -prepurchase/com.ticketmaster.prepurchase.base/-web-view-margin-mode/index.html
 $dokka.location:com.ticketmaster.prepurchase.data.cart////PointingToDeclaration/-ticketmaster -prepurchase/com.ticketmaster.prepurchase.data.cart/index.html
 $dokka.location:com.ticketmaster.prepurchase.data.cart/Total///PointingToDeclaration/-ticketmaster -prepurchase/com.ticketmaster.prepurchase.data.cart/-total/index.html
 $dokka.location:com.ticketmaster.prepurchase.data.cart/Total/Total/#kotlin.Double#kotlin.String?#kotlin.Double#kotlin.Double/PointingToDeclaration/-ticketmaster -prepurchase/com.ticketmaster.prepurchase.data.cart/-total/-total.html
