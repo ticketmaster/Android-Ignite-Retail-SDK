@@ -1,0 +1,1 @@
+sourceset_dependencies='{":foundation/debug":[],":foundation/main":[],":foundation/release":[]}'
