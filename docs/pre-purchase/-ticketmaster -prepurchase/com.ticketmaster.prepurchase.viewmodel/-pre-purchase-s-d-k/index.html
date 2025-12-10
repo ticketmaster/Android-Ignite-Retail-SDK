@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>PrePurchaseSDK</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../index.html">
+                    Ticketmaster Prepurchase
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;-ticketmaster -prepurchase/com.ticketmaster.prepurchase.viewmodel/-pre-purchase-s-d-k/index.html&quot;}">3.8.11</dokka-template-command>        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":pre-purchase/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":pre-purchase/release"
+                                       data-filter=":pre-purchase/release"/>
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Ticketmaster Prepurchase
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="Ticketmaster Prepurchase::com.ticketmaster.prepurchase.viewmodel/PrePurchaseSDK///PointingToDeclaration//-1044060554">
+  <div class="breadcrumbs"><a href="../../../index.html">Ticketmaster Prepurchase</a><span class="delimiter">/</span><a href="../index.html">com.ticketmaster.prepurchase.viewmodel</a><span class="delimiter">/</span><span class="current">PrePurchaseSDK</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Pre</span><wbr></wbr><span>Purchase</span><wbr></wbr><span><span>SDK</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">PrePurchaseSDK</a></div><p class="paragraph">Manages global state and initialization for the prepurchase flow.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1761723756%2FProperties%2F-1044060554" anchor-label="currentLocationPayload" id="1761723756%2FProperties%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="current-location-payload.html"><span>current</span><wbr></wbr><span>Location</span><wbr></wbr><span><span>Payload</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1761723756%2FProperties%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="current-location-payload.html">currentLocationPayload</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The current location payload as a JSON string, or null if not set.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="858323189%2FProperties%2F-1044060554" anchor-label="currentMarketDomain" id="858323189%2FProperties%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="current-market-domain.html"><span>current</span><wbr></wbr><span>Market</span><wbr></wbr><span><span>Domain</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="858323189%2FProperties%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="current-market-domain.html">currentMarketDomain</a><span class="token operator">: </span><span data-unresolved-link="com.ticketmaster.discoveryapi.enums/TMMarketDomain///PointingToDeclaration/">TMMarketDomain</span></div><div class="brief "><p class="paragraph">The current market domain for the prepurchase flow.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1944300187%2FProperties%2F-1044060554" anchor-label="isDebug" id="-1944300187%2FProperties%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-debug.html"><span>is</span><wbr></wbr><span><span>Debug</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1944300187%2FProperties%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="is-debug.html">isDebug</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Indicates whether debug mode is enabled.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="820717949%2FProperties%2F-1044060554" anchor-label="isDiscoveryHomeScreen" id="820717949%2FProperties%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-discovery-home-screen.html"><span>is</span><wbr></wbr><span>Discovery</span><wbr></wbr><span>Home</span><wbr></wbr><span><span>Screen</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="820717949%2FProperties%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="is-discovery-home-screen.html">isDiscoveryHomeScreen</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Indicates whether the discovery home screen is active.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1656257079%2FProperties%2F-1044060554" anchor-label="isForced" id="-1656257079%2FProperties%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-forced.html"><span>is</span><wbr></wbr><span><span>Forced</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1656257079%2FProperties%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="is-forced.html">isForced</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Indicates whether the prepurchase flow is forced.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-514963111%2FProperties%2F-1044060554" anchor-label="languageParam" id="-514963111%2FProperties%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="language-param.html"><span>language</span><wbr></wbr><span><span>Param</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-514963111%2FProperties%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="language-param.html">languageParam</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">The language parameter for the current market (e.g., &quot;en-us&quot;).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="787355153%2FProperties%2F-1044060554" anchor-label="launchingNonDiscoveryHomeScreen" id="787355153%2FProperties%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="launching-non-discovery-home-screen.html"><span>launching</span><wbr></wbr><span>Non</span><wbr></wbr><span>Discovery</span><wbr></wbr><span>Home</span><wbr></wbr><span><span>Screen</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="787355153%2FProperties%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="launching-non-discovery-home-screen.html">launchingNonDiscoveryHomeScreen</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Indicates whether a non-discovery home screen is being launched.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2085145418%2FProperties%2F-1044060554" anchor-label="locationMarketModel" id="-2085145418%2FProperties%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="location-market-model.html"><span>location</span><wbr></wbr><span>Market</span><wbr></wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2085145418%2FProperties%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="location-market-model.html">locationMarketModel</a><span class="token operator">: </span><a href="../../com.ticketmaster.prepurchase.internal/-location-market-model/index.html">LocationMarketModel</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The current location market model, or null if not set.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1056196372%2FProperties%2F-1044060554" anchor-label="pageLoadCount" id="1056196372%2FProperties%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="page-load-count.html"><span>page</span><wbr></wbr><span>Load</span><wbr></wbr><span><span>Count</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1056196372%2FProperties%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="page-load-count.html">pageLoadCount</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Tracks the number of page loads in the discovery flow.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="392157067%2FProperties%2F-1044060554" anchor-label="pageLoadCountLimit" id="392157067%2FProperties%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="page-load-count-limit.html"><span>page</span><wbr></wbr><span>Load</span><wbr></wbr><span>Count</span><wbr></wbr><span><span>Limit</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="392157067%2FProperties%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="page-load-count-limit.html">pageLoadCountLimit</a><span class="token operator">: </span><a href="../../com.ticketmaster.prepurchase.data/-discovery-web-page-loads/index.html">DiscoveryWebPageLoads</a></div><div class="brief "><p class="paragraph">The page load count limit for the discovery flow.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2072067763%2FProperties%2F-1044060554" anchor-label="wasOneTrustInitialized" id="2072067763%2FProperties%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="was-one-trust-initialized.html"><span>was</span><wbr></wbr><span>One</span><wbr></wbr><span>Trust</span><wbr></wbr><span><span>Initialized</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2072067763%2FProperties%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="was-one-trust-initialized.html">wasOneTrustInitialized</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Indicates whether OneTrust has been initialized.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1556889890%2FFunctions%2F-1044060554" anchor-label="destroyPrePurchase" id="1556889890%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="destroy-pre-purchase.html"><span>destroy</span><wbr></wbr><span>Pre</span><wbr></wbr><span><span>Purchase</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1556889890%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="destroy-pre-purchase.html"><span class="token function">destroyPrePurchase</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Cleans up resources and clears the location listener and member info.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1263908111%2FFunctions%2F-1044060554" anchor-label="getLocationlistener" id="1263908111%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-locationlistener.html"><span>get</span><wbr></wbr><span><span>Locationlistener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1263908111%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-locationlistener.html"><span class="token function">getLocationlistener</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.ticketmaster.prepurchase/-location-update/index.html">LocationUpdate</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Retrieves the current location update listener.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="189845068%2FFunctions%2F-1044060554" anchor-label="getMarketDomain" id="189845068%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-market-domain.html"><span>get</span><wbr></wbr><span>Market</span><wbr></wbr><span><span>Domain</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="189845068%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-market-domain.html"><span class="token function">getMarketDomain</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">country<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.ticketmaster.discoveryapi.enums/TMMarketDomain///PointingToDeclaration/">TMMarketDomain</span></div><div class="brief "><p class="paragraph">Retrieves the market domain for a given country code.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1838355664%2FFunctions%2F-1044060554" anchor-label="getMemberInfo" id="-1838355664%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-member-info.html"><span>get</span><wbr></wbr><span>Member</span><wbr></wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1838355664%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-member-info.html"><span class="token function">getMemberInfo</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.ticketmaster.discoveryapi.models/MemberInfo///PointingToDeclaration/">MemberInfo</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Retrieves the current member information.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-471950811%2FFunctions%2F-1044060554" anchor-label="launchPrePurchaseSDK" id="-471950811%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="launch-pre-purchase-s-d-k.html"><span>launch</span><wbr></wbr><span>Pre</span><wbr></wbr><span>Purchase</span><wbr></wbr><span><span>SDK</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-471950811%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="launch-pre-purchase-s-d-k.html"><span class="token function">launchPrePurchaseSDK</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">tmPrePurchase<span class="token operator">: </span><a href="../../com.ticketmaster.prepurchase/-t-m-pre-purchase/index.html">TMPrePurchase</a><span class="token punctuation">, </span></span><span class="parameter ">tmPrePurchaseWebsiteConfiguration<span class="token operator">: </span><a href="../../com.ticketmaster.prepurchase/-t-m-pre-purchase-website-configuration/index.html">TMPrePurchaseWebsiteConfiguration</a><span class="token punctuation">, </span></span><span class="parameter ">activity<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Launches the prepurchase SDK with the specified configuration.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="389586055%2FFunctions%2F-1044060554" anchor-label="registerLocationListener" id="389586055%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="register-location-listener.html"><span>register</span><wbr></wbr><span>Location</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="389586055%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="register-location-listener.html"><span class="token function">registerLocationListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">locationListener<span class="token operator">: </span><a href="../../com.ticketmaster.prepurchase/-location-update/index.html">LocationUpdate</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Registers a location update listener.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1873346784%2FFunctions%2F-1044060554" anchor-label="setMemberInfo" id="-1873346784%2FFunctions%2F-1044060554" data-filterable-set=":pre-purchase/release"></a>
+          <div class="table-row" data-filterable-current=":pre-purchase/release" data-filterable-set=":pre-purchase/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-member-info.html"><span>set</span><wbr></wbr><span>Member</span><wbr></wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1873346784%2FFunctions%2F-1044060554"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":pre-purchase/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-member-info.html"><span class="token function">setMemberInfo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">memberInfo<span class="token operator">: </span><span data-unresolved-link="com.ticketmaster.discoveryapi.models/MemberInfo///PointingToDeclaration/">MemberInfo</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the member information for the prepurchase flow.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>2025 Ticketmaster. All rights reserved.</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
