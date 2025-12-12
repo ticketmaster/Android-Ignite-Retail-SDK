@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>PrismicResponse</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../index.html">
+                    Ticketmaster Discovery API
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;-ticketmaster -discovery -a-p-i/com.ticketmaster.prismic.model/-prismic-response/index.html&quot;}">3.8.12</dokka-template-command>        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":discoveryAPI/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":discoveryAPI/release"
+                                       data-filter=":discoveryAPI/release"/>
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Ticketmaster Discovery API
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="Ticketmaster Discovery API::com.ticketmaster.prismic.model/PrismicResponse///PointingToDeclaration//-1766392555">
+  <div class="breadcrumbs"><a href="../../../index.html">Ticketmaster Discovery API</a><span class="delimiter">/</span><a href="../index.html">com.ticketmaster.prismic.model</a><span class="delimiter">/</span><span class="current">PrismicResponse</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Prismic</span><wbr></wbr><span><span>Response</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":discoveryAPI/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">PrismicResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>header<span class="token operator">: </span><a href="../-header/index.html">Header</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>lineup<span class="token operator">: </span><a href="../-line-up/index.html">LineUp</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>about<span class="token operator">: </span><a href="../-about/index.html">About</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>news<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-news/index.html">News</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>gallery<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-gallery-item/index.html">GalleryItem</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>accessibility<span class="token operator">: </span><a href="../-accessibility/index.html">Accessibility</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>faqs<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-f-a-q/index.html">FAQ</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>countdownFooter<span class="token operator">: </span><a href="../-countdown-footer/index.html">CountdownFooter</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>experience<span class="token operator">: </span><a href="../-experience/index.html">Experience</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>location<span class="token operator">: </span><a href="../-location/index.html">Location</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>infoModule<span class="token operator">: </span><a href="../-info-module/index.html">InfoModule</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">Represents a Prismic content response in the Discovery API.</p><p class="paragraph">Holds various content sections like header, lineup, and FAQs.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="63052844%2FConstructors%2F-1766392555" anchor-label="PrismicResponse" id="63052844%2FConstructors%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-prismic-response.html"><span>Prismic</span><wbr></wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="63052844%2FConstructors%2F-1766392555"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":discoveryAPI/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">header<span class="token operator">: </span><a href="../-header/index.html">Header</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">lineup<span class="token operator">: </span><a href="../-line-up/index.html">LineUp</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">about<span class="token operator">: </span><a href="../-about/index.html">About</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">news<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-news/index.html">News</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">gallery<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-gallery-item/index.html">GalleryItem</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">accessibility<span class="token operator">: </span><a href="../-accessibility/index.html">Accessibility</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">faqs<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-f-a-q/index.html">FAQ</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">countdownFooter<span class="token operator">: </span><a href="../-countdown-footer/index.html">CountdownFooter</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">experience<span class="token operator">: </span><a href="../-experience/index.html">Experience</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">location<span class="token operator">: </span><a href="../-location/index.html">Location</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">infoModule<span class="token operator">: </span><a href="../-info-module/index.html">InfoModule</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-247558961%2FProperties%2F-1766392555" anchor-label="about" id="-247558961%2FProperties%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+          <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="about.html"><span><span>about</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-247558961%2FProperties%2F-1766392555"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":discoveryAPI/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="about.html">about</a><span class="token operator">: </span><a href="../-about/index.html">About</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The about section content, if available.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1901999314%2FProperties%2F-1766392555" anchor-label="accessibility" id="-1901999314%2FProperties%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+          <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="accessibility.html"><span><span>accessibility</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1901999314%2FProperties%2F-1766392555"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":discoveryAPI/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="accessibility.html">accessibility</a><span class="token operator">: </span><a href="../-accessibility/index.html">Accessibility</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The accessibility content, if available.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-700633264%2FProperties%2F-1766392555" anchor-label="countdownFooter" id="-700633264%2FProperties%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+          <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="countdown-footer.html"><span>countdown</span><wbr></wbr><span><span>Footer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-700633264%2FProperties%2F-1766392555"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":discoveryAPI/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="countdown-footer.html">countdownFooter</a><span class="token operator">: </span><a href="../-countdown-footer/index.html">CountdownFooter</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The countdown footer content, if available.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-646866700%2FProperties%2F-1766392555" anchor-label="experience" id="-646866700%2FProperties%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+          <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="experience.html"><span><span>experience</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-646866700%2FProperties%2F-1766392555"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":discoveryAPI/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="experience.html">experience</a><span class="token operator">: </span><a href="../-experience/index.html">Experience</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The experience content, if available.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="118576737%2FProperties%2F-1766392555" anchor-label="faqs" id="118576737%2FProperties%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+          <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="faqs.html"><span><span>faqs</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="118576737%2FProperties%2F-1766392555"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":discoveryAPI/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="faqs.html">faqs</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-f-a-q/index.html">FAQ</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">List of FAQ entries, if available.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1558278934%2FProperties%2F-1766392555" anchor-label="gallery" id="-1558278934%2FProperties%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+          <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="gallery.html"><span><span>gallery</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1558278934%2FProperties%2F-1766392555"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":discoveryAPI/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="gallery.html">gallery</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-gallery-item/index.html">GalleryItem</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">List of gallery items, if available.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1971821135%2FProperties%2F-1766392555" anchor-label="header" id="-1971821135%2FProperties%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+          <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="header.html"><span><span>header</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1971821135%2FProperties%2F-1766392555"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":discoveryAPI/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="header.html">header</a><span class="token operator">: </span><a href="../-header/index.html">Header</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The header content, if available.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-407629916%2FProperties%2F-1766392555" anchor-label="infoModule" id="-407629916%2FProperties%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+          <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="info-module.html"><span>info</span><wbr></wbr><span><span>Module</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-407629916%2FProperties%2F-1766392555"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":discoveryAPI/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="info-module.html">infoModule</a><span class="token operator">: </span><a href="../-info-module/index.html">InfoModule</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The information module content, if available.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2081176815%2FProperties%2F-1766392555" anchor-label="lineup" id="2081176815%2FProperties%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+          <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="lineup.html"><span><span>lineup</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2081176815%2FProperties%2F-1766392555"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":discoveryAPI/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="lineup.html">lineup</a><span class="token operator">: </span><a href="../-line-up/index.html">LineUp</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The lineup content, if available.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-264646327%2FProperties%2F-1766392555" anchor-label="location" id="-264646327%2FProperties%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+          <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="location.html"><span><span>location</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-264646327%2FProperties%2F-1766392555"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":discoveryAPI/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="location.html">location</a><span class="token operator">: </span><a href="../-location/index.html">Location</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The location content, if available.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1824193643%2FProperties%2F-1766392555" anchor-label="news" id="1824193643%2FProperties%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+          <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="news.html"><span><span>news</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1824193643%2FProperties%2F-1766392555"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":discoveryAPI/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="news.html">news</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-news/index.html">News</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">List of news items, if available.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>2025 Ticketmaster. All rights reserved.</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

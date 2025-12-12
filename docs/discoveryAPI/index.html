@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Ticketmaster Discovery API</title>
+    <link href="images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="scripts/sourceset_dependencies.js" async="async"></script>
+<link href="styles/style.css" rel="Stylesheet">
+<link href="styles/main.css" rel="Stylesheet">
+<link href="styles/prism.css" rel="Stylesheet">
+<link href="styles/logo-styles.css" rel="Stylesheet">
+<link href="styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<link href="styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="index.html">
+                    Ticketmaster Discovery API
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;index.html&quot;}">3.8.12</dokka-template-command>        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":discoveryAPI/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":discoveryAPI/release"
+                                       data-filter=":discoveryAPI/release"/>
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Ticketmaster Discovery API
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" id="content" pageIds="Ticketmaster Discovery API::////PointingToDeclaration//-1766392555">
+  <div class="breadcrumbs"></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Ticketmaster</span></span> <span><span>Discovery</span></span> <span><span>API</span></span></h1>
+  </div>
+  <h2 class="">Packages</h2>
+  <div class="table"><a data-name="-1999595294%2FPackages%2F-1766392555" anchor-label="[root]" id="-1999595294%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/[root]/index.html">[root]</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1999595294%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="304953203%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.category" id="304953203%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.category/index.html">com.ticketmaster.category</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="304953203%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1431459154%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.category.model" id="-1431459154%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.category.model/index.html">com.ticketmaster.category.model</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1431459154%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1948146868%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.category.usecase.category" id="1948146868%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.category.usecase.category/index.html">com.ticketmaster.category.usecase.category</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1948146868%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1254059909%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.category.usecase.di" id="-1254059909%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.category.usecase.di/index.html">com.ticketmaster.category.usecase.di</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1254059909%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-2025022951%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.cookie" id="-2025022951%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.cookie/index.html">com.ticketmaster.cookie</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2025022951%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="950891646%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.cookie.datasource" id="950891646%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.cookie.datasource/index.html">com.ticketmaster.cookie.datasource</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="950891646%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-544565447%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.cookie.datasource.di" id="-544565447%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.cookie.datasource.di/index.html">com.ticketmaster.cookie.datasource.di</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-544565447%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="698599358%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.cookie.di" id="698599358%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.cookie.di/index.html">com.ticketmaster.cookie.di</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="698599358%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="787701855%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi" id="787701855%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi/index.html">com.ticketmaster.discoveryapi</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="787701855%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-228650056%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.di" id="-228650056%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.di/index.html">com.ticketmaster.discoveryapi.di</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-228650056%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1524588266%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.entity" id="-1524588266%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.entity/index.html">com.ticketmaster.discoveryapi.entity</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1524588266%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-2037423677%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.enums" id="-2037423677%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.enums/index.html">com.ticketmaster.discoveryapi.enums</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2037423677%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1205215732%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.mapper" id="1205215732%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.mapper/index.html">com.ticketmaster.discoveryapi.mapper</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1205215732%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-798145104%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.mfx" id="-798145104%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.mfx/index.html">com.ticketmaster.discoveryapi.mfx</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-798145104%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1693077157%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.mfx.entity" id="1693077157%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.mfx.entity/index.html">com.ticketmaster.discoveryapi.mfx.entity</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1693077157%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="127913859%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.mfx.mapper" id="127913859%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.mfx.mapper/index.html">com.ticketmaster.discoveryapi.mfx.mapper</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="127913859%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-351840469%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.mfx.model" id="-351840469%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.mfx.model/index.html">com.ticketmaster.discoveryapi.mfx.model</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-351840469%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1607619513%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.mfx.usecase" id="1607619513%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.mfx.usecase/index.html">com.ticketmaster.discoveryapi.mfx.usecase</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1607619513%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1829928157%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.models" id="1829928157%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.models/index.html">com.ticketmaster.discoveryapi.models</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1829928157%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-953102477%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.models.category" id="-953102477%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.models.category/index.html">com.ticketmaster.discoveryapi.models.category</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-953102477%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1267852773%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.models.classification" id="-1267852773%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.models.classification/index.html">com.ticketmaster.discoveryapi.models.classification</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1267852773%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1852515645%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.repository" id="1852515645%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.repository/index.html">com.ticketmaster.discoveryapi.repository</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1852515645%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="644239208%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.usecase" id="644239208%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.usecase/index.html">com.ticketmaster.discoveryapi.usecase</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="644239208%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1161498737%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.usecase.attraction" id="1161498737%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.usecase.attraction/index.html">com.ticketmaster.discoveryapi.usecase.attraction</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1161498737%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-567669543%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.usecase.attractionsearch" id="-567669543%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.usecase.attractionsearch/index.html">com.ticketmaster.discoveryapi.usecase.attractionsearch</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-567669543%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1016243339%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.usecase.city" id="-1016243339%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.usecase.city/index.html">com.ticketmaster.discoveryapi.usecase.city</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1016243339%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-319848400%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.usecase.classification" id="-319848400%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.usecase.classification/index.html">com.ticketmaster.discoveryapi.usecase.classification</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-319848400%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="978678104%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.usecase.classificationsearch" id="978678104%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.usecase.classificationsearch/index.html">com.ticketmaster.discoveryapi.usecase.classificationsearch</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="978678104%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="141841172%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.usecase.event" id="141841172%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.usecase.event/index.html">com.ticketmaster.discoveryapi.usecase.event</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="141841172%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1782589633%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.usecase.event.entity" id="1782589633%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.usecase.event.entity/index.html">com.ticketmaster.discoveryapi.usecase.event.entity</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1782589633%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="238582441%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.usecase.venue" id="238582441%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.usecase.venue/index.html">com.ticketmaster.discoveryapi.usecase.venue</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="238582441%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="474803473%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.usecase.venuesearch" id="474803473%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.usecase.venuesearch/index.html">com.ticketmaster.discoveryapi.usecase.venuesearch</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="474803473%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-124244446%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.discoveryapi.utils" id="-124244446%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.discoveryapi.utils/index.html">com.ticketmaster.discoveryapi.utils</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-124244446%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1224513886%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.domain.di" id="1224513886%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.domain.di/index.html">com.ticketmaster.domain.di</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1224513886%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1898438602%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.prismic" id="1898438602%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.prismic/index.html">com.ticketmaster.prismic</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1898438602%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="2001237445%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.prismic.model" id="2001237445%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.prismic.model/index.html">com.ticketmaster.prismic.model</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2001237445%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1814282137%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.promoted" id="1814282137%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.promoted/index.html">com.ticketmaster.promoted</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1814282137%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1573584468%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.promoted.model" id="1573584468%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.promoted.model/index.html">com.ticketmaster.promoted.model</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1573584468%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="810079394%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.promoted.usecase" id="810079394%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.promoted.usecase/index.html">com.ticketmaster.promoted.usecase</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="810079394%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="700683413%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.promoted.usecase.di" id="700683413%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.promoted.usecase.di/index.html">com.ticketmaster.promoted.usecase.di</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="700683413%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1935217292%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.promoted.usecase.promoted" id="-1935217292%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.promoted.usecase.promoted/index.html">com.ticketmaster.promoted.usecase.promoted</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1935217292%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-17786796%2FPackages%2F-1766392555" anchor-label="com.ticketmaster.thirdparty" id="-17786796%2FPackages%2F-1766392555" data-filterable-set=":discoveryAPI/release"></a>
+    <div class="table-row" data-filterable-current=":discoveryAPI/release" data-filterable-set=":discoveryAPI/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-ticketmaster -discovery -a-p-i/com.ticketmaster.thirdparty/index.html">com.ticketmaster.thirdparty</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-17786796%2FPackages%2F-1766392555"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>2025 Ticketmaster. All rights reserved.</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
