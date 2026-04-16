@@ -1,0 +1,1 @@
+sourceset_dependencies='{":discoveryAPI/debug":[],":discoveryAPI/main":[],":discoveryAPI/release":[]}'
