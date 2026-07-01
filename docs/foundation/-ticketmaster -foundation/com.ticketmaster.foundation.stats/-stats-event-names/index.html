@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>StatsEventNames</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../index.html">
+                    Ticketmaster Foundation
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;-ticketmaster -foundation/com.ticketmaster.foundation.stats/-stats-event-names/index.html&quot;}">3.8.21</dokka-template-command>        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":foundation/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":foundation/release"
+                                       data-filter=":foundation/release"/>
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Ticketmaster Foundation
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="Ticketmaster Foundation::com.ticketmaster.foundation.stats/StatsEventNames///PointingToDeclaration//1292670590">
+  <div class="breadcrumbs"><a href="../../../index.html">Ticketmaster Foundation</a><span class="delimiter">/</span><a href="../index.html">com.ticketmaster.foundation.stats</a><span class="delimiter">/</span><span class="current">StatsEventNames</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Stats</span><wbr></wbr><span>Event</span><wbr></wbr><span><span>Names</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":foundation/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">StatsEventNames</a></div><p class="paragraph">Canonical <code class="lang-kotlin">/stats</code> <code class="lang-kotlin">event_name</code> values (MA-13896) — the single source of truth for the telemetry contract. Every emit site and the reporter allow-list reference these constants so a typo becomes a compile error rather than a silently-dropped event (an unknown name fails <a href="../-web-view-stats-reporter/index.html">WebViewStatsReporter</a>'s allow-list check and only bumps the <code class="lang-kotlin">bridge_unknown_event</code> counter).</p><p class="paragraph">Names are shared with the iOS client and the backend; do not change a value without updating both. <a href="-a-l-l-o-w_-l-i-s-t.html">ALLOW_LIST</a> is the set the reporter validates against.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-950095893%2FProperties%2F1292670590" anchor-label="ADP_LOAD" id="-950095893%2FProperties%2F1292670590" data-filterable-set=":foundation/release"></a>
+          <div class="table-row" data-filterable-current=":foundation/release" data-filterable-set=":foundation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-a-d-p_-l-o-a-d.html"><span>ADP_</span><wbr></wbr><span>LOAD</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-950095893%2FProperties%2F1292670590"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":foundation/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-a-d-p_-l-o-a-d.html">ADP_LOAD</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Attraction/artist detail page.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1941008561%2FProperties%2F1292670590" anchor-label="ALLOW_LIST" id="-1941008561%2FProperties%2F1292670590" data-filterable-set=":foundation/release"></a>
+          <div class="table-row" data-filterable-current=":foundation/release" data-filterable-set=":foundation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-a-l-l-o-w_-l-i-s-t.html"><span>ALLOW_</span><wbr></wbr><span>LIST</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1941008561%2FProperties%2F1292670590"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":foundation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-a-l-l-o-w_-l-i-s-t.html">ALLOW_LIST</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Every valid <code class="lang-kotlin">event_name</code>. <a href="../-web-view-stats-reporter/index.html">WebViewStatsReporter</a> drops anything not in this set.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1094869009%2FProperties%2F1292670590" anchor-label="EDP_LOAD" id="-1094869009%2FProperties%2F1292670590" data-filterable-set=":foundation/release"></a>
+          <div class="table-row" data-filterable-current=":foundation/release" data-filterable-set=":foundation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-e-d-p_-l-o-a-d.html"><span>EDP_</span><wbr></wbr><span>LOAD</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1094869009%2FProperties%2F1292670590"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":foundation/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-e-d-p_-l-o-a-d.html">EDP_LOAD</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Event detail page — the live ticket-selection webview (retail).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="815102285%2FProperties%2F1292670590" anchor-label="HOME_PAGE_LOAD" id="815102285%2FProperties%2F1292670590" data-filterable-set=":foundation/release"></a>
+          <div class="table-row" data-filterable-current=":foundation/release" data-filterable-set=":foundation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-h-o-m-e_-p-a-g-e_-l-o-a-d.html"><span>HOME_</span><wbr></wbr><span>PAGE_</span><wbr></wbr><span>LOAD</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="815102285%2FProperties%2F1292670590"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":foundation/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-h-o-m-e_-p-a-g-e_-l-o-a-d.html">HOME_PAGE_LOAD</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Discovery home page (prod/tm flavor only — beta home is native Compose).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1711758161%2FProperties%2F1292670590" anchor-label="SEARCH_RESULTS_LOAD" id="1711758161%2FProperties%2F1292670590" data-filterable-set=":foundation/release"></a>
+          <div class="table-row" data-filterable-current=":foundation/release" data-filterable-set=":foundation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-e-a-r-c-h_-r-e-s-u-l-t-s_-l-o-a-d.html"><span>SEARCH_</span><wbr></wbr><span>RESULTS_</span><wbr></wbr><span>LOAD</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1711758161%2FProperties%2F1292670590"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":foundation/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-e-a-r-c-h_-r-e-s-u-l-t-s_-l-o-a-d.html">SEARCH_RESULTS_LOAD</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Search results page (emitted by web via the search bridge).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="662759062%2FProperties%2F1292670590" anchor-label="SEARCH_SUGGEST" id="662759062%2FProperties%2F1292670590" data-filterable-set=":foundation/release"></a>
+          <div class="table-row" data-filterable-current=":foundation/release" data-filterable-set=":foundation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-e-a-r-c-h_-s-u-g-g-e-s-t.html"><span>SEARCH_</span><wbr></wbr><span>SUGGEST</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="662759062%2FProperties%2F1292670590"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":foundation/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-e-a-r-c-h_-s-u-g-g-e-s-t.html">SEARCH_SUGGEST</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Search suggest — one per search session (emitted by web via the search bridge).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="437328896%2FProperties%2F1292670590" anchor-label="VDP_LOAD" id="437328896%2FProperties%2F1292670590" data-filterable-set=":foundation/release"></a>
+          <div class="table-row" data-filterable-current=":foundation/release" data-filterable-set=":foundation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-v-d-p_-l-o-a-d.html"><span>VDP_</span><wbr></wbr><span>LOAD</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="437328896%2FProperties%2F1292670590"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":foundation/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-v-d-p_-l-o-a-d.html">VDP_LOAD</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Venue detail page.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>2025 Ticketmaster. All rights reserved.</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

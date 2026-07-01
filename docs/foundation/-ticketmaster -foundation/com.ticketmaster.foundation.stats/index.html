@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>com.ticketmaster.foundation.stats</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<link href="../../styles/multimodule.css" rel="Stylesheet">
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../index.html">
+                    Ticketmaster Foundation
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;-ticketmaster -foundation/com.ticketmaster.foundation.stats/index.html&quot;}">3.8.21</dokka-template-command>        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":foundation/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":foundation/release"
+                                       data-filter=":foundation/release"/>
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Ticketmaster Foundation
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageIds="Ticketmaster Foundation::com.ticketmaster.foundation.stats////PointingToDeclaration//1292670590">
+  <div class="breadcrumbs"><a href="../../index.html">Ticketmaster Foundation</a><span class="delimiter">/</span><span class="current">com.ticketmaster.foundation.stats</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-1637616410%2FClasslikes%2F1292670590" anchor-label="IifeReport" id="-1637616410%2FClasslikes%2F1292670590" data-filterable-set=":foundation/release"></a>
+          <div class="table-row" data-filterable-current=":foundation/release" data-filterable-set=":foundation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-iife-report/index.html"><span>Iife</span><wbr></wbr><span><span>Report</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1637616410%2FClasslikes%2F1292670590"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":foundation/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-iife-report/index.html">IifeReport</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>requestMs<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>renderMs<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>responseSizeBytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pageElapsedMs<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>bridgeNoRender<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>renderSource<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Report payload posted by the injected IIFE (page-side clocks only).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1926590560%2FClasslikes%2F1292670590" anchor-label="PostTransport" id="-1926590560%2FClasslikes%2F1292670590" data-filterable-set=":foundation/release"></a>
+          <div class="table-row" data-filterable-current=":foundation/release" data-filterable-set=":foundation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-post-transport/index.html"><span>Post</span><wbr></wbr><span><span>Transport</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1926590560%2FClasslikes%2F1292670590"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":foundation/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-post-transport/index.html">PostTransport</a></div><div class="brief "><p class="paragraph">Injectable POST seam so tests can assert behavior without real network.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1274497687%2FClasslikes%2F1292670590" anchor-label="StatsContext" id="-1274497687%2FClasslikes%2F1292670590" data-filterable-set=":foundation/release"></a>
+          <div class="table-row" data-filterable-current=":foundation/release" data-filterable-set=":foundation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-stats-context/index.html"><span>Stats</span><wbr></wbr><span><span>Context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1274497687%2FClasslikes%2F1292670590"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":foundation/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-stats-context/index.html">StatsContext</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>sessionId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>appVersion<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>osVersion<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>networkType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Session/app/device context, supplied by the host at init (keeps foundation dep-clean).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1880252147%2FClasslikes%2F1292670590" anchor-label="StatsCounters" id="1880252147%2FClasslikes%2F1292670590" data-filterable-set=":foundation/release"></a>
+          <div class="table-row" data-filterable-current=":foundation/release" data-filterable-set=":foundation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-stats-counters/index.html"><span>Stats</span><wbr></wbr><span><span>Counters</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1880252147%2FClasslikes%2F1292670590"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":foundation/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-stats-counters/index.html">StatsCounters</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>lostTiming<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>bridgeUnknownEvent<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="263396510%2FClasslikes%2F1292670590" anchor-label="StatsEvent" id="263396510%2FClasslikes%2F1292670590" data-filterable-set=":foundation/release"></a>
+          <div class="table-row" data-filterable-current=":foundation/release" data-filterable-set=":foundation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-stats-event/index.html"><span>Stats</span><wbr></wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="263396510%2FClasslikes%2F1292670590"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":foundation/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-stats-event/index.html">StatsEvent</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>eventName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>clientTsMs<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>sessionId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>appVersion<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>osVersion<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>networkType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>requestMs<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>renderMs<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>totalMs<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>nativeOverheadMs<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isColdStart<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>responseSizeBytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>bridgeNoRender<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>renderSource<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">A single enriched timing event (system of record).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="556499388%2FClasslikes%2F1292670590" anchor-label="StatsEventNames" id="556499388%2FClasslikes%2F1292670590" data-filterable-set=":foundation/release"></a>
+          <div class="table-row" data-filterable-current=":foundation/release" data-filterable-set=":foundation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-stats-event-names/index.html"><span>Stats</span><wbr></wbr><span>Event</span><wbr></wbr><span><span>Names</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="556499388%2FClasslikes%2F1292670590"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":foundation/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-stats-event-names/index.html">StatsEventNames</a></div><div class="brief "><p class="paragraph">Canonical <code class="lang-kotlin">/stats</code> <code class="lang-kotlin">event_name</code> values (MA-13896) — the single source of truth for the telemetry contract. Every emit site and the reporter allow-list reference these constants so a typo becomes a compile error rather than a silently-dropped event (an unknown name fails <a href="-web-view-stats-reporter/index.html">WebViewStatsReporter</a>'s allow-list check and only bumps the <code class="lang-kotlin">bridge_unknown_event</code> counter).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1764633291%2FClasslikes%2F1292670590" anchor-label="StatsEventSink" id="1764633291%2FClasslikes%2F1292670590" data-filterable-set=":foundation/release"></a>
+          <div class="table-row" data-filterable-current=":foundation/release" data-filterable-set=":foundation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-stats-event-sink/index.html"><span>Stats</span><wbr></wbr><span>Event</span><wbr></wbr><span><span>Sink</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1764633291%2FClasslikes%2F1292670590"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":foundation/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-stats-event-sink/index.html">StatsEventSink</a></div><div class="brief "><p class="paragraph">Deferred sink seam — null in this MR; a follow-up wires a BitDrift impl.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="731346454%2FClasslikes%2F1292670590" anchor-label="StatsKeys" id="731346454%2FClasslikes%2F1292670590" data-filterable-set=":foundation/release"></a>
+          <div class="table-row" data-filterable-current=":foundation/release" data-filterable-set=":foundation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-stats-keys/index.html"><span>Stats</span><wbr></wbr><span><span>Keys</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="731346454%2FClasslikes%2F1292670590"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":foundation/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-stats-keys/index.html">StatsKeys</a></div><div class="brief "><p class="paragraph">Canonical JSON field names for the <code class="lang-kotlin">/stats</code> telemetry contract (MA-13896) — the single source of truth shared by the producer (<a href="-stats-event/to-json-map.html">StatsEvent.toJsonMap</a>) and every consumer (the IIFE payload readers in the pre-purchase / retail <code class="lang-kotlin">WebViewTimingBridge</code>s and <code class="lang-kotlin">SearchStatsTapIn</code>).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1840323154%2FClasslikes%2F1292670590" anchor-label="WebViewStatsReporter" id="1840323154%2FClasslikes%2F1292670590" data-filterable-set=":foundation/release"></a>
+          <div class="table-row" data-filterable-current=":foundation/release" data-filterable-set=":foundation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-web-view-stats-reporter/index.html"><span>Web</span><wbr></wbr><span>View</span><wbr></wbr><span>Stats</span><wbr></wbr><span><span>Reporter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1840323154%2FClasslikes%2F1292670590"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":foundation/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-web-view-stats-reporter/index.html">WebViewStatsReporter</a></div><div class="brief "><p class="paragraph">System of record for webview timing. Holds per-instance t0 (native monotonic clock), validates event names, computes native-from-native and page-from-page deltas, enqueues to the ring buffer, and flushes fire-and-forget.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="177802566%2FClasslikes%2F1292670590" anchor-label="WebViewStatsReporterFactory" id="177802566%2FClasslikes%2F1292670590" data-filterable-set=":foundation/release"></a>
+          <div class="table-row" data-filterable-current=":foundation/release" data-filterable-set=":foundation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-web-view-stats-reporter-factory/index.html"><span>Web</span><wbr></wbr><span>View</span><wbr></wbr><span>Stats</span><wbr></wbr><span>Reporter</span><wbr></wbr><span><span>Factory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="177802566%2FClasslikes%2F1292670590"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":foundation/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-web-view-stats-reporter-factory/index.html">WebViewStatsReporterFactory</a></div><div class="brief "><p class="paragraph">Builds a production <a href="-web-view-stats-reporter/index.html">WebViewStatsReporter</a>: an OkHttp-backed transport (the SDK-standard HTTP client), native monotonic clock, and a 30 s flush scheduler bound to scope. The host supplies enabled (default-off feature gate) and a contextProvider for session/app/device fields (keeps foundation dependency-clean — no reach-up).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1328023065%2FClasslikes%2F1292670590" anchor-label="WebViewTimingIife" id="-1328023065%2FClasslikes%2F1292670590" data-filterable-set=":foundation/release"></a>
+          <div class="table-row" data-filterable-current=":foundation/release" data-filterable-set=":foundation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-web-view-timing-iife/index.html"><span>Web</span><wbr></wbr><span>View</span><wbr></wbr><span>Timing</span><wbr></wbr><span><span>Iife</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1328023065%2FClasslikes%2F1292670590"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":foundation/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-web-view-timing-iife/index.html">WebViewTimingIife</a></div><div class="brief "><p class="paragraph">The self-measuring IIFE injected at document-start. Reads Navigation Timing, observes LCP (preferring a <code class="lang-kotlin">tm-rendered</code> mark when web provides one), and posts ONE report to the native bridge. Wrapped, no globals, all try/catch, never throws into the page. A 28s self-timeout emits bridge_no_render if render never fires (slightly under the native 30s lost_timing window so a report wins over a drop).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>2025 Ticketmaster. All rights reserved.</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
